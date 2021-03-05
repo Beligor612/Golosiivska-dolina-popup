@@ -1,0 +1,112 @@
+.overview
+	width: 100%
+	height: 100vh
+	z-index: 0
+	position: fixed
+	&::before
+		display: block
+		content: ''
+		width: 100%
+		height: 100vh
+		cursor: pointer
+		background-color: #597c4467
+.popup
+	max-width: 1000px
+	max-height: 700px
+	width: 1000px
+	height: 700px
+	position: fixed
+	top: 50%
+	left: 50%
+	margin-left: -500px
+	margin-top: -350px
+	background: url('../img/Bg-img.jpg') 0 0 no-repeat
+	display: flex
+	flex-direction: column
+	border-radius: 10px
+	z-index: 3
+	.patterns
+		position: absolute
+		z-index: -1
+		top: 2%
+		left: 3%
+	.popup__close_icon
+		display: block
+		margin-right: 27px
+		cursor: pointer
+		margin-top: 29px
+		align-self: flex-end
+	.popup-wrap
+		.popup-text
+			color: #fff
+			margin-top: 210px
+			margin-left: 39px
+			max-width: 323px
+			.popup__title
+				text-transform: uppercase
+				font-size: 42px
+				line-height: 66.14px
+				margin-bottom: 5px
+			.popup__title-little
+				font-size: 32px
+				line-height: 49.61px
+				margin-top: 0
+		.popup-discounts
+			display: flex
+			margin-bottom: 53px
+			.discount
+				border: 2px solid #FFA13F
+				padding: 40px 50px 44px 90px
+				font-size: 18px
+				color: #fff
+				line-height: 27px
+				max-width: 173px
+				font-weight: 500
+				position: relative
+			.image_disc
+				text-align: center
+				display: flex
+				justify-content: center
+				align-items: center
+				padding: 12px
+				font-size: 34px
+				line-height: 55px
+				position: absolute
+				top: 0
+				left: -22%
+				background: url('../img/Orange_btn.png') center no-repeat
+				width: 112px
+				height: 112px
+			.discount + .discount
+				margin-left: 150px
+			.popup-discounts__first
+				margin-left: 90px
+				.popup-discounts__first__content
+					
+			.popup-discounts__second
+				.popup-discounts__second__content
+		.popup-form
+			display: flex
+			justify-content: center
+			margin: 0 70px 64px
+			.input
+				border: 2px solid #fff
+				border-radius: 35px
+				background-color: transparent
+				padding: 13px 30px 
+				outline: none
+				color: #fff
+				margin: 0 25px
+				&::placeholder
+					color: #fff
+			&__txt
+				margin-left: 34px
+			&__tel
+
+			&__submit
+				font-size: 16px
+				line-height: 22px
+				border: none !important
+				text-transform: uppercase
+				background-color: #FFA13F !important
+				cursor: pointer
